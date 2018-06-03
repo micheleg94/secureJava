@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="356.0" prefWidth="476.0" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.AggiungiAgenziaViewController">
+   <children>
+      <TextField fx:id="partitaIvaTF" layoutX="35.0" layoutY="102.0" prefHeight="25.0" prefWidth="181.0" promptText="Inserisci la Partita Iva..." />
+      <TextField fx:id="nomeTF" layoutX="261.0" layoutY="103.0" prefHeight="25.0" prefWidth="181.0" promptText="Inserisci il nome..." />
+      <TextField fx:id="cittaTF" layoutX="35.0" layoutY="171.0" prefHeight="25.0" prefWidth="181.0" promptText="Inserisci la città..." />
+      <ChoiceBox fx:id="provinceCB" layoutX="262.0" layoutY="172.0" prefHeight="26.0" prefWidth="181.0" />
+      <TextField fx:id="viaTF" layoutX="35.0" layoutY="239.0" prefHeight="25.0" prefWidth="181.0" promptText="Inserisci la via..." />
+      <TextField fx:id="civicoTF" layoutX="261.0" layoutY="240.0" prefHeight="25.0" prefWidth="181.0" promptText="Inserisci il numero civico..." />
+     <Button fx:id="aggiungiAgenziaButton" layoutX="73.0" layoutY="301.0" mnemonicParsing="false" onAction="#aggiungiAgenzia" prefHeight="32.0" prefWidth="146.0" text="Aggiungi">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+      <Text layoutX="35.0" layoutY="91.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Partita Iva" />
+      <Text layoutX="35.0" layoutY="160.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Città" />
+      <Text layoutX="35.0" layoutY="226.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Via" />
+      <Text layoutX="261.0" layoutY="91.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nome" />
+      <Text layoutX="261.0" layoutY="161.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Provincia" />
+      <Text layoutX="261.0" layoutY="227.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Civico" />
+   <Button fx:id="annullaButton" layoutX="258.0" layoutY="301.0" mnemonicParsing="false" onAction="#premutAnnulla" prefHeight="32.0" prefWidth="146.0" text="Annulla">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+      <Label layoutX="136.0" layoutY="24.0" text="Aggiungi Agenzia">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Label>
+   
+   </children>
+</AnchorPane>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="356.0" prefWidth="518.0" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.AggiungiDipendenteViewController">
+   <children>
+      <ChoiceBox fx:id="agenziaCB" layoutX="54.0" layoutY="113.0" prefHeight="26.0" prefWidth="181.0" />
+      <TextField fx:id="nomeTF" layoutX="290.0" layoutY="113.0" prefHeight="25.0" prefWidth="181.0" promptText="Inserisci il nome..." />
+      <TextField fx:id="cognomeTF" layoutX="54.0" layoutY="181.0" prefHeight="25.0" prefWidth="181.0" promptText="Inserisci lil cognome..." />
+      <TextField fx:id="telefonoTF" layoutX="290.0" layoutY="181.0" prefHeight="25.0" prefWidth="181.0" promptText="Inserisci il telefono..." />
+      <TextField fx:id="usernameTF" layoutX="23.0" layoutY="249.0" prefHeight="26.0" prefWidth="146.0" promptText="Inserisci l'username..." />
+      <PasswordField fx:id="passTF" layoutX="186.0" layoutY="249.0" prefHeight="26.0" prefWidth="153.0" promptText="Inserisci la password..." />
+      <PasswordField fx:id="repPassTF" layoutX="356.0" layoutY="249.0" prefHeight="26.0" prefWidth="139.0" promptText="Ripeti la password..." />
+      <Button fx:id="aggiungiButton" layoutX="98.0" layoutY="310.0" mnemonicParsing="false" onAction="#premutoAggiungi" prefHeight="32.0" prefWidth="146.0" text="Aggiungi">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+      <Button fx:id="annullaButton" layoutX="283.0" layoutY="310.0" mnemonicParsing="false" onAction="#premutoAnnulla" prefHeight="32.0" prefWidth="146.0" text="Annulla">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+      <Text layoutX="54.0" layoutY="101.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Agenzia" />
+      <Text layoutX="54.0" layoutY="170.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cognome" />
+      <Text layoutX="23.0" layoutY="236.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Username" />
+      <Text layoutX="290.0" layoutY="101.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nome" />
+      <Text layoutX="290.0" layoutY="171.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Telefono" />
+      <Label layoutX="139.0" layoutY="34.0" text="Aggiungi Dipendente">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Label>
+      <Text layoutX="186.0" layoutY="236.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password" />
+   </children>
+</AnchorPane>

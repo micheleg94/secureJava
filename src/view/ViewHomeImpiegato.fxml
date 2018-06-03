@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="735.0" prefWidth="842.0" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.HomeImpiegatoViewController">
+   <children>
+      <ImageView fx:id="background" fitHeight="735.0" fitWidth="842.0" pickOnBounds="true" />
+      <Button fx:id="btnApriContratto" layoutX="43.0" layoutY="652.0" mnemonicParsing="false" onAction="#apriContratto" prefHeight="46.0" prefWidth="247.0" text="Apri Contratto" />
+      <Button fx:id="btnChiudiContratto" layoutX="364.0" layoutY="652.0" mnemonicParsing="false" onAction="#chiudiContratto" prefHeight="46.0" prefWidth="247.0" text="Chiudi Contratto" />
+      <TableView fx:id="tblAuto" layoutX="18.0" layoutY="54.0" prefHeight="152.0" prefWidth="808.0">
+         <columns>
+            <TableColumn fx:id="colTarga" prefWidth="145.0" text="Targa" />
+            <TableColumn fx:id="colFascia" prefWidth="72.0" text="Fascia" />
+            <TableColumn fx:id="colModello" prefWidth="184.0" text="Modello" />
+            <TableColumn fx:id="colAgenzia" prefWidth="154.0" text="Agenzia" />
+            <TableColumn fx:id="colStato" prefWidth="107.0" text="Stato" />
+            <TableColumn fx:id="colKm" prefWidth="124.0" text="Chilometri" />
+         </columns>
+      </TableView>
+      <TableView fx:id="tblCliente" layoutX="19.0" layoutY="468.0" prefHeight="152.0" prefWidth="808.0">
+         <columns>
+            <TableColumn fx:id="colCF" prefWidth="204.0" text="CF" />
+            <TableColumn fx:id="colNome" prefWidth="150.0" text="Nome" />
+            <TableColumn fx:id="colCognome" prefWidth="137.0" text="Cognome" />
+            <TableColumn fx:id="colTelefono" prefWidth="158.0" text="Telefono" />
+            <TableColumn fx:id="colContratto" minWidth="0.0" prefWidth="138.0" text="Contratto" />
+         </columns>
+      </TableView>
+      <Label layoutX="396.0" layoutY="428.0" text="Clienti">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="388.0" layoutY="220.0" text="Contratti">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="403.0" layoutY="14.0" text="Auto">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <TableView fx:id="tblContratto" layoutX="18.0" layoutY="258.0" prefHeight="152.0" prefWidth="808.0">
+         <columns>
+            <TableColumn fx:id="colID" prefWidth="41.0" text="ID" />
+            <TableColumn fx:id="colAuto" prefWidth="92.0" text="Auto" />
+            <TableColumn fx:id="colAgenziaAp" prefWidth="78.0" text="Apertura" />
+            <TableColumn fx:id="colAgenziaCh" minWidth="0.64453125" prefWidth="79.0" text="Chiusura" />
+            <TableColumn fx:id="colDataInizio" prefWidth="91.0" text="Inizio" />
+            <TableColumn fx:id="colDataFine" minWidth="3.49664306640625" prefWidth="85.0" text="Fine" />
+            <TableColumn fx:id="colCliente" minWidth="3.49664306640625" prefWidth="151.0" text="Cliente" />
+            <TableColumn fx:id="colTipoNoleggio" minWidth="0.0" prefWidth="84.0" text="Durata" />
+            <TableColumn fx:id="colTipoChilometraggio" minWidth="0.0" prefWidth="91.0" text="Tariffa" />
+         </columns>
+      </TableView>
+      <Button fx:id="btnLogout" layoutX="713.0" layoutY="652.0" mnemonicParsing="false" onAction="#premutoLogout" prefHeight="46.0" prefWidth="104.0" text="Esci" />
+   </children>
+</AnchorPane>

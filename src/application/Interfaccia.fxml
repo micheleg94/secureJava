@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MainController">
+   <children>
+      <TextField fx:id="usernameTF" layoutX="203.0" layoutY="135.0" prefHeight="26.0" prefWidth="194.0" promptText="Username..." />
+      <PasswordField fx:id="pswdTF" layoutX="203.0" layoutY="179.0" prefHeight="26.0" prefWidth="194.0" promptText="Password..." />
+      <Label layoutX="158.0" layoutY="30.0" text="CarLoan">
+         <font>
+            <Font name="Helvetica Neue Light" size="77.0" />
+         </font></Label>
+      <Button fx:id="loginButton" layoutX="237.0" layoutY="240.0" mnemonicParsing="false" onAction="#premutoLogin" prefHeight="26.0" prefWidth="126.0" text="Login" />
+      <Button fx:id="registratiButton" layoutX="237.0" layoutY="285.0" mnemonicParsing="false" onAction="#premutoRegistrati" prefHeight="26.0" prefWidth="126.0" text="Registrati" />
+      <Button layoutX="237.0" layoutY="346.0" mnemonicParsing="false" onAction="#premutoEsci" prefHeight="26.0" prefWidth="126.0" text="Esci" />
+      <ToggleButton fx:id="temaButton" layoutX="30.0" layoutY="346.0" mnemonicParsing="false" prefHeight="24.0" prefWidth="24.0" />
+   </children>
+</AnchorPane>

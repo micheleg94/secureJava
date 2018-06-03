@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="618.0" prefWidth="464.0" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.ChiudiContrattoViewController">
+   <children>
+      <Label layoutX="142.0" layoutY="34.0" text="Chiudi Contratto">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Button layoutX="26.0" layoutY="506.0" mnemonicParsing="false" onAction="#premutoChiudiContratto" prefHeight="56.0" prefWidth="412.0" text="Chiudi Contratto">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Button>
+      <Button layoutX="27.0" layoutY="578.0" mnemonicParsing="false" onAction="#premutoAnnulla" prefHeight="26.0" prefWidth="412.0" text="Annulla" />
+      <Label layoutX="26.0" layoutY="97.0" text="Seleziona il contratto">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <ChoiceBox fx:id="idContrattoCB" layoutX="175.0" layoutY="93.0" prefHeight="26.0" prefWidth="264.0" />
+      <GridPane layoutX="35.0" layoutY="153.0" prefHeight="312.0" prefWidth="403.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="-Infinity" minHeight="-Infinity" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="-Infinity" minHeight="-Infinity" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="-Infinity" minHeight="-Infinity" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="-Infinity" minHeight="-Infinity" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="-Infinity" minHeight="-Infinity" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="-Infinity" minHeight="-Infinity" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="-Infinity" minHeight="-Infinity" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="101.0" minHeight="4.0" prefHeight="74.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="42.0" minHeight="0.0" prefHeight="35.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label text="Numero contratto:" />
+            <Label text="Auto assegnata:" GridPane.rowIndex="1" />
+            <Label fx:id="labelIdContratto" GridPane.columnIndex="1" />
+            <Label fx:id="labelAuto" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Label text="Tipo noleggio:" GridPane.rowIndex="2" />
+            <Label text="Tipo tariffa:" GridPane.rowIndex="3" />
+            <Label fx:id="labelTipoNoleggio" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <Label fx:id="labelTipoTariffa" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <Label fx:id="labelScrittaKmPrevisti" text="Km Previsti:" GridPane.rowIndex="4" />
+            <Label fx:id="labelKmPrevisti" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <Label text="TOTALE:" GridPane.rowIndex="8">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="labelTotale" alignment="CENTER_RIGHT" prefHeight="24.0" prefWidth="198.0" text="Premi 'Genera Totale'" textAlignment="RIGHT" GridPane.columnIndex="1" GridPane.rowIndex="8">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="labelScrittaKmPrevisti1" text="Km Auto:" GridPane.rowIndex="5" />
+            <TextField fx:id="kmAttualiTF" maxWidth="-Infinity" minWidth="-Infinity" prefHeight="26.0" prefWidth="187.0" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+            <Label fx:id="labelScrittaKmPrevisti11" prefHeight="16.0" prefWidth="192.0" text="Data Rientro:" GridPane.rowIndex="6" />
+            <DatePicker fx:id="dataRientroDP" prefHeight="26.0" prefWidth="187.0" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+         </children>
+      </GridPane>
+      <Separator layoutX="23.0" layoutY="153.0" orientation="VERTICAL" prefHeight="211.0" prefWidth="6.0" />
+      <Separator layoutX="435.0" layoutY="150.0" orientation="VERTICAL" prefHeight="211.0" prefWidth="6.0" />
+      <Separator layoutX="222.0" layoutY="153.0" orientation="VERTICAL" prefHeight="211.0" prefWidth="6.0" />
+      <Button layoutX="26.0" layoutY="385.0" mnemonicParsing="false" onAction="#premutoGeneraTotale" prefHeight="39.0" prefWidth="412.0" text="Genera Totale" />
+   </children>
+</AnchorPane>

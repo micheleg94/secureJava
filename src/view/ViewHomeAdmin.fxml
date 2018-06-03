@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="735.0" prefWidth="794.0" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.HomeAdminViewController">
+   <children>
+      <ImageView fx:id="background" fitHeight="735.0" fitWidth="794.0" opacity="0.95" pickOnBounds="true" />
+      <Button fx:id="btnApriContratto" layoutX="59.0" layoutY="667.0" mnemonicParsing="false" onAction="#apriContratto" prefHeight="46.0" prefWidth="247.0" text="Apri Contratto" />
+      <Button fx:id="btnChiudiContratto" layoutX="380.0" layoutY="667.0" mnemonicParsing="false" onAction="#chiudiContratto" prefHeight="46.0" prefWidth="247.0" text="Chiudi Contratto" />
+      <Button fx:id="btnAggiungiAgenzia" layoutX="677.0" layoutY="293.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#aggiungiAgenzia" prefHeight="40.0" prefWidth="85.0" text="Aggiungi Agenzia" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font></Button>
+      <Button fx:id="btnRimuoviAgenzia" layoutX="676.0" layoutY="343.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#eliminaAgenzia" prefHeight="40.0" prefWidth="85.0" text="Rimuovi Agenzia" />
+      <Button fx:id="btnAggiungiAuto" layoutX="673.0" layoutY="67.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#aggiungiAuto" prefHeight="40.0" prefWidth="85.0" text="Aggiungi Auto" textAlignment="CENTER" wrapText="true">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font></Button>
+      <Button fx:id="btnRimuoviAuto" layoutX="673.0" layoutY="117.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#eliminaAuto" prefHeight="40.0" prefWidth="85.0" text="Rimuovi Auto" />
+      <Button fx:id="btnManutenzioneAuto" layoutX="673.0" layoutY="166.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#manutenzioneAuto" prefHeight="40.0" prefWidth="85.0" text="Manutenzione Auto" />
+      <Button fx:id="btnAggiungiDipendente" layoutX="676.0" layoutY="511.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#aggiungiDipendente" prefHeight="40.0" prefWidth="85.0" text="Aggiungi Dipendente" textAlignment="CENTER">
+         <font>
+            <Font name="System Font Bold" size="13.0" />
+         </font></Button>
+      <Button fx:id="btnRimuoviDipendente" layoutX="676.0" layoutY="561.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#eliminaDipendente" prefHeight="40.0" prefWidth="85.0" text="Rimuovi Dipendente" />
+      <TableView fx:id="tblAgenzie" layoutX="33.0" layoutY="261.0" prefHeight="152.0" prefWidth="619.0">
+        <columns>
+          <TableColumn fx:id="colPartitaIva" prefWidth="104.72525024414062" text="P. IVA" />
+          <TableColumn fx:id="colNome" prefWidth="107.39764404296875" text="Nome" />
+            <TableColumn fx:id="colCitta" prefWidth="135.82037353515625" text="Citta" />
+            <TableColumn fx:id="colProvincia" minWidth="0.64453125" prefWidth="37.926025390625" text="Prov" />
+            <TableColumn fx:id="colVia" prefWidth="139.6829833984375" text="Via" />
+            <TableColumn fx:id="colCivico" minWidth="3.49664306640625" prefWidth="68.3170166015625" text="Civico" />
+        </columns>
+      </TableView>
+      <TableView fx:id="tblAuto" layoutX="33.0" layoutY="54.0" prefHeight="152.0" prefWidth="619.0">
+         <columns>
+            <TableColumn fx:id="colTarga" prefWidth="96.0" text="Targa" />
+            <TableColumn fx:id="colFascia" prefWidth="49.0" text="Fascia" />
+            <TableColumn fx:id="colModello" prefWidth="136.0" text="Modello" />
+            <TableColumn fx:id="colAgenzia" prefWidth="123.0" text="Agenzia" />
+            <TableColumn fx:id="colStato" prefWidth="108.0" text="Stato" />
+            <TableColumn fx:id="colKm" prefWidth="88.0" text="Chilometri" />
+         </columns>
+      </TableView>
+      <TableView fx:id="tblDipendenti" layoutX="34.0" layoutY="475.0" prefHeight="152.0" prefWidth="619.0">
+         <columns>
+            <TableColumn fx:id="colAgenziaDip" prefWidth="161.59844970703125" text="Agenzia" />
+            <TableColumn fx:id="colNomeDip" prefWidth="115.5667724609375" text="Nome" />
+            <TableColumn fx:id="colCognome" prefWidth="122.48223876953125" text="Cognome" />
+            <TableColumn fx:id="colTelefono" prefWidth="114.43994140625" text="Telefono" />
+            <TableColumn fx:id="colUsername" prefWidth="84.57733154296875" text="Username" />
+         </columns>
+      </TableView>
+      <Label layoutX="343.0" layoutY="432.0" text="Dipendenti">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="357.0" layoutY="221.0" text="Agenzie">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="372.0" layoutY="14.0" text="Auto">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnLogout" layoutX="658.0" layoutY="667.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#premutoLogout" prefHeight="46.0" prefWidth="104.0" text="Esci" />
+   </children>
+</AnchorPane>

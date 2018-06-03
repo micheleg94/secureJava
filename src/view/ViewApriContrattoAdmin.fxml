@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="506.0" prefWidth="833.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.ApriContrattoViewController">
+   <children>
+      <Label layoutX="350.0" layoutY="25.0" text="Apri Contratto">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="231.0" layoutY="84.0" text="Dati Noleggio">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Separator layoutX="17.0" layoutY="109.0" prefHeight="0.0" prefWidth="533.0" />
+      <Separator layoutX="17.0" layoutY="79.0" prefHeight="0.0" prefWidth="533.0" />
+      <ChoiceBox fx:id="fasciaCB" layoutX="25.0" layoutY="147.0" prefWidth="150.0" />
+      <ChoiceBox fx:id="noleggioCB" layoutX="217.0" layoutY="147.0" prefWidth="150.0" />
+      <ChoiceBox fx:id="tariffaCB" layoutX="393.0" layoutY="147.0" prefWidth="150.0" />
+      <ChoiceBox fx:id="ritornoCB" layoutX="217.0" layoutY="208.0" prefWidth="150.0" />
+      <Label layoutX="25.0" layoutY="121.0" text="Fascia auto">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="217.0" layoutY="121.0" text="Tipo noleggio">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="393.0" layoutY="121.0" text="Tipo tariffa">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="25.0" layoutY="181.0" text="Agenzia di rilascio">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="217.0" layoutY="181.0" text="Agenzia di ritorno">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <DatePicker fx:id="dataInizioDF" layoutX="394.0" layoutY="208.0" prefHeight="26.0" prefWidth="150.0" promptText="Data inizio..." />
+      <Label layoutX="394.0" layoutY="181.0" text="Data Inizio">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="238.0" layoutY="256.0" text="Dati Cliente">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Separator layoutX="16.0" layoutY="280.0" prefHeight="0.0" prefWidth="533.0" />
+      <Separator layoutX="16.0" layoutY="250.0" prefHeight="0.0" prefWidth="533.0" />
+      <Label layoutX="191.0" layoutY="298.0" text="Seleziona un cliente esistente">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <ChoiceBox fx:id="clienteCB" layoutX="18.0" layoutY="323.0" prefHeight="26.0" prefWidth="533.0" />
+      <Label layoutX="169.0" layoutY="360.0" text="Altrimenti aggiungi un nuovo cliente">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="nomeTF" layoutX="17.0" layoutY="413.0" promptText="Inserisci il nome..." />
+      <Label layoutX="18.0" layoutY="386.0" text="Nome">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="cognomeTF" layoutX="203.0" layoutY="414.0" promptText="Inserisci il cognome..." />
+      <Label layoutX="202.0" layoutY="387.0" text="Cognome">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="telefonoTF" layoutX="386.0" layoutY="415.0" promptText="Inserisci il telefono..." />
+      <Label layoutX="385.0" layoutY="388.0" text="Telefono">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="18.0" layoutY="460.0" text="Codice Fiscale">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="codiceFiscaleTF" layoutX="125.0" layoutY="456.0" prefHeight="26.0" prefWidth="423.0" promptText="Inserisci il codice fiscale..." />
+      <Separator layoutX="393.0" layoutY="306.0" prefHeight="3.0" prefWidth="150.0" />
+      <Separator layoutX="410.0" layoutY="369.0" prefHeight="3.0" prefWidth="141.0" />
+      <Separator layoutX="19.0" layoutY="306.0" prefHeight="3.0" prefWidth="150.0" />
+      <Separator layoutX="17.0" layoutY="369.0" prefHeight="3.0" prefWidth="141.0" />
+      <Separator layoutX="577.0" layoutY="73.0" orientation="VERTICAL" prefHeight="412.0" prefWidth="3.0" />
+      <Separator layoutX="602.0" layoutY="78.0" prefHeight="3.0" prefWidth="207.0" />
+      <Separator layoutX="602.0" layoutY="108.0" prefHeight="3.0" prefWidth="207.0" />
+      <Label layoutX="669.0" layoutY="84.0" text="Riepilogo">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Separator layoutX="601.0" layoutY="308.0" prefHeight="3.0" prefWidth="207.0" />
+      <Button layoutX="602.0" layoutY="336.0" mnemonicParsing="false" onAction="#premutoGeneraContratto" prefHeight="26.0" prefWidth="207.0" text="Genera Contratto" />
+      <Separator layoutX="602.0" layoutY="385.0" prefHeight="3.0" prefWidth="207.0" />
+      <Button layoutX="602.0" layoutY="393.0" mnemonicParsing="false" onAction="#premutoApriContratto" prefHeight="39.0" prefWidth="207.0" text="Apri Contratto">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Button>
+      <Button layoutX="602.0" layoutY="443.0" mnemonicParsing="false" onAction="#premutoAnnulla" prefHeight="26.0" prefWidth="207.0" text="Annulla" />
+      <Label layoutX="601.0" layoutY="121.0" text="Auto assegnata">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="autoTF" editable="false" layoutX="601.0" layoutY="147.0" prefHeight="26.0" prefWidth="207.0" promptText="Premi &quot;Genera Contratto&quot;..." text="Premi &quot;Genera Contratto&quot;..." />
+      <Label layoutX="601.0" layoutY="182.0" text="Acconto">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="accontoTF" editable="false" layoutX="601.0" layoutY="208.0" prefHeight="26.0" prefWidth="207.0" promptText="Premi &quot;Genera Contratto&quot;..." text="Premi &quot;Genera Contratto&quot;..." />
+      <Label layoutX="602.0" layoutY="243.0" text="Numero di Contratto">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="contrattoTF" editable="false" layoutX="602.0" layoutY="269.0" prefHeight="26.0" prefWidth="207.0" promptText="Premi &quot;Genera Contratto&quot;..." text="Premi &quot;Genera Contratto&quot;..." />
+      <ChoiceBox fx:id="rilascioCB" layoutX="25.0" layoutY="208.0" prefWidth="150.0" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="300.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.DialogVerificaViewController">
+   <children>
+      <Text layoutX="26.0" layoutY="52.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Inserisci la password di amministrazione&#10;per aggiungere nuovi Admin" textAlignment="CENTER">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Text>
+      <PasswordField fx:id="pswdTF" layoutX="119.0" layoutY="108.0" promptText="Password..." />
+      <Button fx:id="okButton" layoutX="154.0" layoutY="164.0" mnemonicParsing="false" onAction="#premutoOk" prefHeight="26.0" prefWidth="93.0" text="Ok" />
+      <Button fx:id="cancelButton" layoutX="154.0" layoutY="211.0" mnemonicParsing="false" onAction="#premutoCancel" prefHeight="26.0" prefWidth="93.0" text="Annulla" />
+   </children>
+</AnchorPane>
